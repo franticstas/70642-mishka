@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Станислав Стас](https://up.htmlacademy.ru/adaptive/15/user/70642).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк](https://htmlacademy.ru/profile/id568747).
 
 ---
 
