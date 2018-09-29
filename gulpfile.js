@@ -4,8 +4,7 @@ var gulp = require('gulp'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps'),
-    plumber = require('gulp-plumber'),
-    coffee = require('gulp-coffee');
+    plumber = require('gulp-plumber');
 
 gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.sass')
