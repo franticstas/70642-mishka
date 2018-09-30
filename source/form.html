@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="page-header">
+    <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Интернет магазин Мишка" width="150" height="100">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+                <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__list">
+                <li class="user-list"><a href="#">Поиск по сайту</a></li>
+                <li class="user-list"><a href="#">Корзина: <span>пока пуста</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="order-page">
+    <h1 class="order-page__title">Вязание на заказ</h1>
+    <p class="order-page__manual">
+         Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами,
+        чтобы уточнить детали.
+    </p>
+    <form class="order-page__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+            <legend>Тип</legend>
+            <input type="radio" id="accessories" checked>
+            <label for="accessories">Аксессуар для интерьера</label>
+            <input type="radio" id="toy">
+            <label for="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" id="white" checked>
+            <label for="white">Белый</label>
+            <input type="checkbox" id="gray" checked>
+            <label for="gray">Серый</label>
+            <input type="checkbox" id="tiffani">
+            <label for="tiffani">"Тиффани"</label>
+            <input type="checkbox" id="black">
+            <label for="black">Черный</label>
+            <input type="checkbox" id="pink">
+            <label for="pink">Розовый</label>
+            <input type="checkbox" id="orange">
+            <label for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset>
+            <legend>ФИО</legend>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Введите ваше имя*" required>
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" placeholder="Укажите фамилию*" required>
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset>
+            <legend>Тел</legend>
+            <input type="tel" placeholder="+7 XXX XXX XX XX*" required>
+        </fieldset>
+        <fieldset>
+            <legend>E-mail</legend>
+            <input type="email" placeholder="Ваш email*" required>
+        </fieldset>
+        <fieldset>
+            <legend>Доп</legend>
+            <textarea placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10"></textarea>
+        </fieldset>
+        <small class="form__bottom">*Поля обязательные для заполнения</small>
+        <div class="form__toggle">
+            <input class="button" type="submit" value="Отправить заказ">
+        </div>
+    </form>
+</main>
+<footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__data">
+            <tr>
+                <td class="contacts__parameter">e-mail:</td>
+                <td class="contacts__value"><a href="mailto:"></a>info@mimimishkashop.ru</td>
+            </tr>
+            <tr>
+                <td class="contacts__parameter">адрес:</td>
+                <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+        </table>
+        <div class="contacts__map"></div>
+        <button class="contacts__toggle button" type="button">Напишите нам</button>
+    </section>
+    <section class="page-footer__social social">
+        <ul class="social__list">
+            <li class="social__item">
+                <a href="#" class="social__link social__link--instagram">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--facebook">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--twitter">Мы в твиттере</a>
+            </li>
+        </ul>
+    </section>
+    <section class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a href="" class="copy-right__link">HTML academy</a>
+    </section>
+</footer>
+</body>
+</html>
