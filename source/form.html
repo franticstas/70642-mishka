@@ -25,7 +25,7 @@
 </header>
 <main class="order-page">
     <h1 class="order-page__title">Вязание на заказ</h1>
-    <p class="order-page__manual">
+    <p class="order-page__manual partition">
          Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами,
         чтобы уточнить детали.
@@ -33,50 +33,61 @@
     <form class="order-page__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
             <legend>Тип</legend>
-            <input type="radio" id="accessories" checked>
-            <label for="accessories">Аксессуар для интерьера</label>
-            <input type="radio" id="toy">
-            <label for="toy">Детская игрушка</label>
+            <label>
+              <input type="radio" name="accessories" checked>Аксессуар для интерьера
+            </label>
+            <label>
+              <input type="radio" name="toy">Детская игрушка
+            </label>
         </fieldset>
         <fieldset>
             <legend>Цвет</legend>
-            <input type="checkbox" id="white" checked>
-            <label for="white">Белый</label>
-            <input type="checkbox" id="gray" checked>
-            <label for="gray">Серый</label>
-            <input type="checkbox" id="tiffani">
-            <label for="tiffani">"Тиффани"</label>
-            <input type="checkbox" id="black">
-            <label for="black">Черный</label>
-            <input type="checkbox" id="pink">
-            <label for="pink">Розовый</label>
-            <input type="checkbox" id="orange">
-            <label for="orange">Оранжевый</label>
+            <label>
+              <input type="checkbox" name="white" checked>Белый
+            </label>
+            <label>
+              <input type="checkbox" name="gray" checked>Серый
+            </label>
+            <label>
+              <input type="checkbox" name="tiffani">"Тиффани"
+            </label>
+            <label>
+              <input type="checkbox" name="black">Черный
+            </label>
+            <label for="pink">
+              <input type="checkbox" name="pink">Розовый
+            </label>
+            <label>
+              <input type="checkbox" name="orange">Оранжевый
+            </label>
         </fieldset>
         <fieldset>
             <legend>ФИО</legend>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" placeholder="Введите ваше имя*" required>
-            <label for="surname">Фамилия:</label>
-            <input type="text" id="surname" placeholder="Укажите фамилию*" required>
-            <label for="patronymic">Отчество:</label>
-            <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+            <label>
+              Имя:<input type="text" name="name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label>
+              Фамилия:<input type="text" name="surname" placeholder="Укажите фамилию*" required>
+            </label>
+            <label>
+              Отчество:<input type="text" name="patronymic" placeholder="Отчество, если желаете">
+            </label>
         </fieldset>
         <fieldset>
             <legend>Тел</legend>
-            <input type="tel" placeholder="+7 XXX XXX XX XX*" required>
+            <input type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
         <fieldset>
             <legend>E-mail</legend>
-            <input type="email" placeholder="Ваш email*" required>
+            <input type="email" name="email" placeholder="Ваш email*" required>
         </fieldset>
         <fieldset>
             <legend>Доп</legend>
-            <textarea placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10"></textarea>
+            <textarea name="other" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10"></textarea>
         </fieldset>
         <small class="form__bottom">*Поля обязательные для заполнения</small>
         <div class="form__toggle">
-            <input class="button" type="submit" value="Отправить заказ">
+            <input class="button" name="send_form" type="submit" value="Отправить заказ">
         </div>
     </form>
 </main>
