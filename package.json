@@ -5,8 +5,13 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "9.5.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-cssmin": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "stylelint": "*",
+    "stylelint-config-htmlacademy": "*"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -19,5 +24,19 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franticstas/70642-mishka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franticstas/70642-mishka/issues"
+  },
+  "homepage": "https://github.com/franticstas/70642-mishka#readme",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
   }
 }
