@@ -36,5 +36,7 @@
     "url": "https://github.com/franticstas/70642-mishka/issues"
   },
   "homepage": "https://github.com/franticstas/70642-mishka#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
+  }
 }
