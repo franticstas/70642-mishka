@@ -1,0 +1,26 @@
+.goods {
+  width: 320px;
+  margin: 0 auto;
+}
+.goods__list {
+
+}
+
+.goods__item {
+  list-style: none;
+  height: 100px;
+}
+
+.goods__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+.goods__item--interior {
+  background-color: #63d1bb;
+}
+
+.goods__item--toys {
+  background-color: #55c3b2;
+}
