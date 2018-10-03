@@ -4,39 +4,37 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "autoprefixer": "9.1.x",
+    "browser-sync": "2.24.x",
+    "gulp": "4.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "browser-sync": "*",
-    "gulp": "*",
-    "gulp-cssmin": "*",
-    "gulp-plumber": "*",
-    "gulp-sass": "*",
-    "stylelint": "*",
-    "stylelint-config-htmlacademy": "*"
+    "stylelint": "9.6.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp css",
+    "start": "gulp start"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.12"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/franticstas/70642-mishka.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/franticstas/70642-mishka/issues"
-  },
-  "homepage": "https://github.com/franticstas/70642-mishka#readme",
-  "dependencies": {
-    "gulp-sourcemaps": "^2.6.4"
   }
 }
