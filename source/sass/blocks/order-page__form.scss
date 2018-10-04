@@ -1,0 +1,46 @@
+.order-page__form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form {
+
+}
+
+.form legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.form fieldset {
+  margin-top: 25px;
+}
+
+.form label {
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.form input::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  font-family: OpenSans, Arial, sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.form input:-moz-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  font-family: OpenSans, Arial, sans-serif;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}

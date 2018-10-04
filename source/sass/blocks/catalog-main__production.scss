@@ -1,0 +1,24 @@
+.catalog-main__production {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.production__wrapper {
+  width: 255px;
+  border: 1px solid #f1f1f1;
+  margin: 0 auto;
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.production__video {
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+}

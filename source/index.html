@@ -8,7 +8,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Интернет магазин Мишка" width="150"
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет магазин Мишка" width="150"
            height="100">
     </a>
     <nav class="main-nav">
@@ -26,7 +26,9 @@
     </nav>
   </header>
   <main class="main">
-    <div class="main__tagline">Милый штуки ручной работы для дома</div>
+    <div class="main__tagline tagline">
+      <h1 class="tagline__title">Милые штуки ручной работы для дома</h1>
+    </div>
     <section class="main__goods goods">
       <ul class="goods__list">
         <li class="goods__item goods__item--interior">
@@ -42,7 +44,7 @@
       <p class="product-week__subtitle">Товар недели</p>
       <p class="product-week__description partition">Экологически чистая пряжа, ручная работа.
         Доступны в шести расцветках, и трех размерах.</p>
-      <table class="product-week_options">
+      <table class="product-week__options">
         <tr>
           <td class="product-week__parameter">Цвет:</td>
           <td class="product-week__value">"Тиффани"/серый</td>
@@ -56,7 +58,7 @@
           <td class="product-week__value">15 см</td>
         </tr>
       </table>
-      <img class="product-week__image" src="http://placehold.it/250x315" width="250" height="315" alt="Вязаные корзинки">
+      <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" width="250" height="315" alt="Вязаные корзинки">
       <p class="product-week__price">Цена: <span>990</span> руб.</p>
       <button class="product-week__toggle button" type="button">Заказать</button>
     </section>
@@ -111,9 +113,7 @@
       </div>
       <a class="button feedback__toggle" href="#">Написать</a>
     </section>
-  </main>
-  <footer class="footer">
-    <section class="footer__contacts contacts">
+    <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__data">
         <tr>
@@ -128,6 +128,8 @@
       <div class="contacts__map"></div>
       <a class="contacts__toggle button" href="#" type="button">Напишите нам</a>
     </section>
+  </main>
+  <footer class="footer">
     <section class="footer__social social">
       <ul class="social__list">
         <li class="social__item">

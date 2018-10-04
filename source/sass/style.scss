@@ -1,5 +1,7 @@
 @import "normalize.scss";
 
+@import "global.scss";
+
 /*Подключение БЭМ блоков index.html*/
 @import "blocks/header.scss";
 
@@ -15,6 +17,8 @@
 
 @import "blocks/main__tagline.scss";
 
+@import "blocks/contacts.scss";
+
 @import "blocks/footer.scss";
 
 /*Подключение БЭМ блоков form.html*/
@@ -27,3 +31,12 @@
 
 @import "blocks/order-page__form.scss";
 
+/*Подключение БЭМ блоков catalog.html*/
+
+@import "blocks/catalog-main__title.scss";
+
+@import "blocks/catalog-main__articles.scss";
+
+@import "blocks/catalog-main__production.scss";
+
+@import "blocks/order-page__form.scss"

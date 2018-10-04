@@ -1,0 +1,44 @@
+.catalog-main__articles {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.articles__list {
+  margin: 0;
+  padding: 0;
+}
+
+.articles__item {
+  list-style: none;
+  width: 255px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid #f1f1f1;
+}
+
+.articles__link-name {
+  text-decoration: none;
+}
+
+.articles__title {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.articles__options {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+.articles__price {
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-weight: bold;
+}
