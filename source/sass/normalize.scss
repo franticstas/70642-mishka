@@ -10,7 +10,6 @@
 
 html {
   line-height: 1.15; /* 1 */
-
 }
 
 /* Sections
@@ -184,13 +183,6 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -280,7 +272,6 @@ textarea {
  */
 
 [type="search"] {
-   /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -288,9 +279,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-
-
-/**
+/*
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
