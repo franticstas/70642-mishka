@@ -1,10 +1,29 @@
 .feedback {
   width: 320px;
   margin: 0 auto;
+  border-bottom: 1px solid #000000;
+}
+
+.feedback__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-weight: bold;
+  padding-left: 32px;
+}
+
+.slider {
+  margin-bottom: 20px;
 }
 
 .slider__item {
   margin: 0;
+}
+
+.slider__description {
+  padding-left: 32px;
+  padding-right: 30px;
 }
 
 .slider__author {
@@ -13,6 +32,9 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding-left: 32px;
 }
 
 .slider__tweet {
@@ -21,4 +43,15 @@
   color: #000000;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
+  padding-left: 32px;
+}
+
+.feedback__toggle {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 255px;
 }

@@ -1,6 +1,7 @@
 .about-us {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 27px;
 }
 
 .about-us__title {
@@ -9,6 +10,9 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 32px;
 }
 
 .about-us__list {
@@ -24,4 +28,6 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   padding-top: 80px;
+  padding-left: 32px;
+  padding-right: 35px;
 }

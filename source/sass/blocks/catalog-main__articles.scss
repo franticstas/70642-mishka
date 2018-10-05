@@ -10,7 +10,7 @@
 
 .articles__item {
   list-style: none;
-  width: 255px;
+  width: 260px;
   margin: 0 auto;
   margin-top: 30px;
   border: 1px solid #f1f1f1;
@@ -26,13 +26,23 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
 .articles__options {
+  width: 200px;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
   font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .articles__price {
@@ -41,4 +51,9 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+  padding-left: 25px;
+}
+
+.articles__buy {
+  margin-bottom: 25px;
 }
