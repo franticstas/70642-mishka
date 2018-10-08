@@ -4,13 +4,17 @@
   border-bottom: 1px solid #000000;
 }
 
+.feedback__wrapper {
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
 .feedback__title {
   font-size: 25px;
   line-height: 30px;
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  padding-left: 32px;
 }
 
 .slider {
@@ -21,11 +25,6 @@
   margin: 0;
 }
 
-.slider__description {
-  padding-left: 32px;
-  padding-right: 30px;
-}
-
 .slider__author {
   font-size: 17px;
   line-height: 24px;
@@ -34,7 +33,6 @@
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: 5px;
-  padding-left: 32px;
 }
 
 .slider__tweet {
@@ -43,7 +41,6 @@
   color: #000000;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
-  padding-left: 32px;
 }
 
 .feedback__toggle {

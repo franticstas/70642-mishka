@@ -1,9 +1,9 @@
-.page-header {
+.header {
   width: 320px;
   margin: 0 auto;
 }
 
-.page-header__logo-block {
+.header__logo-block {
   background-color: #ffffff;
   text-align: center;
   padding-top: 20px;
@@ -17,7 +17,7 @@
   padding: 0;
 }
 
-.site-list__item a {
+.site-list__link {
   font-size: 17px;
   line-height: 24px;
   color: #000000;
@@ -31,7 +31,7 @@
   border-bottom: 1px solid #ebebeb;
 }
 
-.user-list__item a {
+.user-list__link {
   font-size: 17px;
   line-height: 24px;
   color: #000000;
