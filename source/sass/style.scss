@@ -1,0 +1,19 @@
+@import "normalize.scss";
+@import "global.scss";
+/*Подключение БЭМ блоков index.html*/
+@import "blocks/header.scss";
+@import "blocks/main__tagline.scss";
+@import "blocks/main__goods.scss";
+@import "blocks/main__product-week.scss";
+@import "blocks/about-us.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+/*Подключение БЭМ блоков form.html*/
+@import "blocks/order-page__title.scss";
+@import "blocks/order-page__manual.scss";
+@import "blocks/order-page__form.scss";
+/*Подключение БЭМ блоков catalog.html*/
+@import "blocks/catalog-main__title.scss";
+@import "blocks/catalog-main__articles.scss";
+@import "blocks/catalog-main__production.scss";
