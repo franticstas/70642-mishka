@@ -1,5 +1,4 @@
 .goods {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
 }
@@ -36,4 +35,29 @@
 
 .goods__item--toys {
   background-color: #55c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    position: relative;
+  }
+
+  .goods__list {
+    position: absolute;
+    top: -105px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .goods__item {
+    min-height: 110px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    font-weight: bold;
+  }
 }

@@ -1,5 +1,4 @@
 .product-week {
-  width: 320px;
   margin: 0 auto;
   border-bottom: 1px solid #000000;
 }
@@ -75,4 +74,27 @@
   position: relative;
   margin: 0 auto;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-week__title {
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    font-weight: bold;
+
+    padding-top: 55px;
+    padding-left: 18px;
+  }
 }

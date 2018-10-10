@@ -1,5 +1,4 @@
 .header {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -16,6 +15,17 @@
   margin: 0;
   padding: 0;
 }
+
+.site-list__item--delivery {
+  display: none;
+}
+
+.user-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 .site-list__link {
   font-size: 17px;
@@ -43,4 +53,108 @@
   padding-bottom: 30px;
   padding-left: 70px;
   border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    flex-basis: auto;
+    position: relative;
+  }
+
+  .header__logo-block {
+    order: 0;
+    border-bottom: 1px solid #ececec;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+  }
+
+  .header__logo-link {
+
+  }
+
+  .header__logo-image {
+    padding-top: 22px;
+    padding-left: 45px;
+    padding-right: 200px;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 110px;
+    order: 2;
+    width: 100%;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .site-list__item--catalog {
+    margin-left: 45px;
+  }
+
+  .site-list__item--knit {
+    margin-left: 40px;
+  }
+
+  .site-list__item--delivery {
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    font-family: "OpenSans", "Arial", sans-serif;
+
+    display: block;
+    margin-left: auto;
+    margin-right: 45px;
+  }
+
+  .site-list__link {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    font-weight: bold;
+  }
+
+  .user-nav {
+    order: 1;
+    border-bottom: 1px solid #ececec;
+    flex-grow: 1;
+  }
+
+  .user-list__item--search {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
+
+  .user-list__link--search {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: none;
+  }
+
+  .user-list__item--cart {
+    margin-right: 45px;
+  }
+
+  .user-list__link--cart {
+    border-bottom: none;
+  }
+
+  .user-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hide-search {
+    display: none;
+  }
 }

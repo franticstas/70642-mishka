@@ -5,27 +5,36 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="sass/blocks/header.scss">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo-block">
-      <a class="header__logo-link">
-        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Интернет магазин Мишка" width="86" height="35">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="#">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Вязание на заказ</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item"><a class="user-list__link" href="#">Поиск по сайту</a></li>
-          <li class="user-list__item"><a class="user-list__link" href="#">Корзина: <span>пока пуста</span></a></li>
+    <!-- <div class="header__wrapper"> -->
+      <div class="header__logo-block">
+        <a class="header__logo-link">
+          <!-- <img class="header__logo-image" src="img/logo-mobile.svg" alt="Интернет магазин Мишка" width="86" height="35"> -->
+          <img class="header__logo-image" src="img/logo-tablet.svg" alt="Интернет магазин Мишка" width="113" height="46">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--catalog"><a class="site-list__link" href="#">Каталог товаров</a></li>
+            <li class="site-list__item site-list__item--knit"><a class="site-list__link" href="#">Вязание на заказ</a></li>
+            <li class="site-list__item site-list__item--delivery">Бесплатная доставка по России</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="user-nav">
+        <ul class="user-nav__list user-list">
+          <li class="user-list__item user-list__item--search"><a class="user-list__link user-list__link--search" href="#">
+            <img class="search-img" src="img/icon-search.svg" alt="Поиск" width="18px" height="19px">
+            <span class="hide-search">
+          Поиск по сайту</span></a></li>
+          <li class="user-list__item user-list__item--cart"><a class="user-list__link user-list__link--cart" href="#">Корзина: <span>пока пуста</span></a></li>
         </ul>
       </div>
-    </nav>
   </header>
   <main class="main">
     <div class="main__tagline tagline">
@@ -43,29 +52,35 @@
     </section>
     <section class="main__product-week product-week">
       <div class="product-week__wrapper">
-        <h2 class="product-week__title">Вязаные корзинки</h2>
-        <p class="product-week__subtitle">Товар недели</p>
-        <p class="product-week__description partition">Экологически чистая пряжа, ручная работа.
-          Доступны в шести расцветках, и трех размерах.</p>
-        <div class="product-week__table">
-          <table class="product-week__options">
-            <tr>
-              <td class="product-week__parameter">Цвет:</td>
-              <td class="product-week__value">"Тиффани"/серый</td>
-            </tr>
-            <tr>
-              <td class="product-week__parameter">Диаметр:</td>
-              <td class="product-week__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="product-week__parameter">Высота:</td>
-              <td class="product-week__value">15 см</td>
-            </tr>
-          </table>
+        <div class="title__wrapper">
+          <h2 class="product-week__title">Вязаные корзинки</h2>
+          <p class="product-week__subtitle">Товар недели</p>
+        </div>
+        <div class="options__wrapper">
+          <p class="product-week__description partition">Экологически чистая пряжа, ручная работа.
+            Доступны в шести расцветках, и трех размерах.</p>
+          <div class="product-week__table">
+            <table class="product-week__options">
+              <tr>
+                <td class="product-week__parameter">Цвет:</td>
+                <td class="product-week__value">"Тиффани"/серый</td>
+              </tr>
+              <tr>
+                <td class="product-week__parameter">Диаметр:</td>
+                <td class="product-week__value">25 см</td>
+              </tr>
+              <tr>
+                <td class="product-week__parameter">Высота:</td>
+                <td class="product-week__value">15 см</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" width="250" height="315" alt="Вязаные корзинки">
         <p class="product-week__price">Цена: <span>990</span> руб.</p>
-        <button class="product-week__toggle button" type="button">Заказать</button>
+        <div class="button__wrapper">
+          <button class="product-week__toggle button" type="button">Заказать</button>
+        </div>
       </div>
     </section>
     <section class="about-us">
@@ -121,6 +136,7 @@
           <button class="slider__next button" type="button">Следующий отзыв</button>
         </div>
         <a class="button feedback__toggle" href="#">Написать</a>
+      </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
@@ -137,7 +153,6 @@
         </table>
         <div class="contacts__map"></div>
         <a class="contacts__toggle button" href="#" type="button">Напишите нам</a>
-      </div>
       </div>
     </section>
   </main>
