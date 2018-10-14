@@ -1,12 +1,23 @@
 .about-us {
-  width: 320px;
   margin: 0 auto;
   padding-bottom: 27px;
+
+  @include tablet() {
+    padding-bottom: 80px;
+  }
 }
 
 .about-us__wrapper {
   padding: 0 32px;
   margin: 0 auto;
+
+  @include tablet() {
+    padding: 0 50px;
+  }
+
+  @include desktop() {
+    padding: 0 270px;
+  }
 }
 
 .about-us__title {
@@ -17,19 +28,86 @@
   font-weight: bold;
   margin: 0;
   padding-top: 30px;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop() {
+    padding-top: 70px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
+  padding-top: 30px;
+
+  @include tablet() {
+    width: 330px;
+  }
+}
+
+.about-us__text {
   font-size: 17px;
   line-height: 20px;
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  padding-top: 80px;
+  margin-bottom: 0;
+
+  @include tablet() {
+    padding-right: 35px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.about-us__eco {
+  @include tablet() {
+    order: 1;
+  }
+}
+
+.about-us__rus-price {
+  @include tablet() {
+    order: 3;
+  }
+}
+
+.about-us__likes {
+  @include tablet() {
+    order: 5;
+  }
+}
+
+.about-us__handmade {
+  @include tablet() {
+    order: 2;
+  }
+}
+
+.about-us__production {
+  @include tablet() {
+    order: 4;
+  }
+}
+
+.about-us__pack {
+  @include tablet() {
+    order: 6;
+  }
 }
