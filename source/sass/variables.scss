@@ -12,3 +12,9 @@ $desktop-width: 1250px;
     @content;
   }
 }
+
+@mixin media($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
