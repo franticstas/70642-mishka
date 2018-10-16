@@ -61,9 +61,9 @@
 .footer__copyright {
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -74,6 +74,14 @@
 
 .copy-right__link {
   padding-top: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-img {
+  fill: #63d1bb;
 }
 
 .footer__logo {

@@ -22,23 +22,32 @@
 
   @include tablet() {
     order: 0;
-    padding: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 16px;
     margin: 0;
     text-align: start;
     border-bottom: none;
   }
 
   @include desktop() {
+    padding: 0;
     padding-top: 8px;
     order: 2;
   }
 }
 
+.header__logo-link {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 .header__logo-image {
   @include tablet() {
-    padding-top: 22px;
-    padding-left: 45px;
-    padding-right: 200px;
+    //margin-top: 22px;
+    //margin-left: 45px;
+    //margin-right: 200px;
+    text-align: start;
     border-bottom: none;
   }
 
