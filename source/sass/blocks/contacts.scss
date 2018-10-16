@@ -23,9 +23,11 @@
 .contacts__wrapper-bottom {
   padding: 0 32px;
   margin: 0 auto;
+  padding-bottom: 35px;
 
   @include tablet() {
     padding: 0 50px;
+    padding-bottom: 55px;
   }
 
   @include  desktop() {
@@ -91,40 +93,51 @@
 
   @include desktop() {
     padding-left: 120px;
-    width: 320px;
     margin-bottom: 30px;
   }
 }
 
 .contacts__row {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__row--email {
+  margin-bottom: 40px;
 
   @include tablet() {
-    width: 250px;
-  }
-
-  @include desktop() {
-    padding-bottom: 35px;
+    margin-right: 50px;
   }
 }
 
-.contacts__value {
-  padding-left: 10px;
-  vertical-align: top;
+.contacts__name {
+  margin-right: 28px;
 
-  @include desktop() {
-    //padding-right: 55px;
+  @include tablet() {
+    min-width: 50px;
   }
 }
 
-.contacts__value a {
+.contacts__link {
   text-decoration: none;
-  border-bottom: 1px solid  red;
-  color: #000000;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #27a08e;
+  }
 }
 
-.contacts__value address {
+.contacts__address {
   font-style: normal;
+
+  @include tablet() {
+    //min-width: 215px;
+  }
 }
 
 .contacts__parameter {
@@ -163,14 +176,14 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 35px;
+  //margin-bottom: 35px;
   width: 255px;
   font-size: 18px;
   line-height: 20px;
 
   @include tablet() {
     font-size: 17px;
-    margin-bottom: 55px;
+    //margin-bottom: 55px;
   }
 
   @include desktop() {

@@ -53,6 +53,7 @@
     top: 110px;
     order: 2;
     width: 100%;
+    z-index: 2;
   }
 
   @include desktop() {
@@ -202,6 +203,10 @@
 .user-list__search-img {
   fill: #b0aeae;
   padding-right: 25px;
+
+  @include tablet() {
+    padding-right: 0;
+  }
 }
 
 .user-list__item--cart {
@@ -223,6 +228,10 @@
 .user-list__cart-img {
   fill: #d3d2d2;
   padding-right: 25px;
+
+  @include tablet() {
+    padding-left: 30px;
+  }
 }
 
 .hide-search {
@@ -239,6 +248,7 @@
     position: absolute;
     top: 110px;
     left: 50px;
+    z-index: 2;
   }
 }
 
@@ -272,6 +282,7 @@
     position: absolute;
     top: 110px;
     right: 45px;
+    z-index: 2;
   }
 
   @include desktop() {
