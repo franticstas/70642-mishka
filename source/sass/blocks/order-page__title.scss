@@ -1,8 +1,37 @@
+.order-page__title-block {
+  background-color: #f1f1f1;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @include tablet() {
+    padding-top: 104px;
+    padding-bottom: 80px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url("../img/bg-zigzag-fill.svg");
+      -webkit-background-size: contain;
+      background-size: contain;
+      height: 24px;
+      width: 100%;
+      bottom: -1px;
+    }
+  }
+}
+
 .order-page__title {
   font-size: 27px;
   line-height: 30px;
   color: #231f20;
   font-family: "OpenSansBold", "Arial", sans-serif;
-  font-weight: bold;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

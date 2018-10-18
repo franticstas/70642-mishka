@@ -1,4 +1,27 @@
-.order-page__manual {
-  width: 320px;
-  margin: 0 auto;
+.order-page__block {
+  padding-top: 29px;
+  padding-left: 30px;
+  padding-right: 28px;
+  padding-bottom: 30px;
+
+  @include tablet() {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 105px;
+  }
+
+  @include desktop() {
+    padding-top: 111px;
+    padding-left: 225px;
+    padding-right: 255px;
+  }
+}
+
+.order-page__block-manual {
+  margin: 0;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

@@ -1,35 +1,130 @@
-.order-page {
-  width: 320px;
-  margin: 0 auto;
+.form {
+  padding-left: 29px;
+  padding-right: 28px;
 }
 
-.order-page__title {
-  background-color: #f1f1f1;
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  display: block;
+.form__group {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 33px;
+  border-top: 1px solid #62d1ba;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 
-.order-page__block-manual {
-  margin-top: 25px;
-  padding-left: 30px;
-}
-
-.form legend {
+.form__legend {
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+  position: relative;
+  padding-right: 27px;
+  margin-bottom: 27px;
 }
 
-.form fieldset {
-  margin-top: 25px;
+.label__text {
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 22px;
 }
 
-.form label {
+//-------------------------------Оформление RADIO-------------------------------------
+.label__radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio {
+  display: none;
+}
+
+.radio-custom {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #434343;
+}
+
+.label__text {
+  display: inline-block;
+  //vertical-align: middle;
+}
+
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 12px;
+  background: #61d1b9;
+  border-radius: 50%;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+  border-radius: 50%;
+}
+
+//-------------------------------Оформление CHECKBOX-------------------------------------
+.label__checkbox {
+  display: flex;
+  align-items: center;
+  padding-bottom: 22px;
+}
+
+.form__checkbox-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  border: 2px solid #434343;
+  position: relative;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 6px;
+  width: 10px;
+  height: 3px;
+  background: #000000;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+.checkbox:checked + .checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  width: 16px;
+  height: 3px;
+  background: #000000;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
+
+//-------------------------------Оформление ФИО-------------------------------------
+.full-name__title {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -37,31 +132,65 @@
   font-weight: bold;
 }
 
-.form input::-webkit-input-placeholder {
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  font-family: "OpenSans", "Arial", sans-serif;
-  padding-bottom: 15px;
-  padding-top: 15px;
+.text-placeholder {
+  width: 100%;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 22px;
+
+  &::placeholder {
+    color: rgba(0,0,0,0.3);
+  }
 }
 
-.form input:-moz-placeholder {
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  font-family: "OpenSans", "Arial", sans-serif;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.form__toggle {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
+.text-placeholder--phone {
   position: relative;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 35px;
-  width: 256px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/icon-phone.svg");
+  }
 }
+//.form label {
+//  font-size: 17px;
+//  line-height: 18px;
+//  color: #000000;
+//  font-family: "OpenSansBold", "Arial", sans-serif;
+//  font-weight: bold;
+//}
+//
+//.form input::-webkit-input-placeholder {
+//  font-size: 17px;
+//  line-height: 18px;
+//  color: #444444;
+//  font-family: "OpenSans", "Arial", sans-serif;
+//  padding-bottom: 15px;
+//  padding-top: 15px;
+//}
+//
+//.form input:-moz-placeholder {
+//  font-size: 17px;
+//  line-height: 18px;
+//  color: #444444;
+//  font-family: "OpenSans", "Arial", sans-serif;
+//  padding-bottom: 15px;
+//  padding-top: 15px;
+//}
+//
+//.form__toggle {
+//  text-transform: uppercase;
+//  text-decoration: none;
+//  display: block;
+//  position: relative;
+//  margin: 0 auto;
+//  margin-top: 25px;
+//  margin-bottom: 35px;
+//  width: 256px;
+//}
