@@ -4,10 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="sass/blocks/header.scss">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="sass/blocks/footer.scss">
-  <link rel="stylesheet" href="sass/blocks/order-page__title.scss">
 </head>
 <body>
   <header class="header">
@@ -80,21 +77,23 @@
       </p>
     </div>
     <form class="order-page__form form" action="https://echo.htmlacademy.ru" method="post">
-      <!-----------------------------------------Форма ТИП----------------------------------------->
+      <!-----------------------------------------Форма ТИП Radio----------------------------------------->
       <fieldset class="form__group">
         <legend class="form__legend">Тип</legend>
-        <label class="label__radio">
+        <div class="form__label-wrapper">
+          <label class="label__radio">
             <input class="radio" type="radio" name="type">
             <span class="radio-custom"></span>
             <span class="label__text">Аксессуар для интерьера</span>
-        </label>
-        <label class="label__radio">
+          </label>
+          <label class="label__radio">
             <input class="radio"  type="radio" name="type">
             <span class="radio-custom"></span>
             <span class="label__text">Детская игрушка</span>
-        </label>
+          </label>
+        </div>
       </fieldset>
-      <!-----------------------------------------Форма ЦВЕТ----------------------------------------->
+      <!-----------------------------------------Форма ЦВЕТ Checkbox----------------------------------------->
       <fieldset class="form__group">
         <legend class="form__legend">Цвет</legend>
         <div class="form__checkbox-group">
@@ -159,9 +158,9 @@
       <!-----------------------------------------Форма ДОП----------------------------------------->
       <fieldset class="form__group">
         <legend class="form__legend">Доп</legend>
-        <textarea name="other" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10"></textarea>
+        <textarea class="textarea" name="other" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10"></textarea>
       </fieldset>
-      <small class="form__bottom">*Поля обязательные для заполнения</small>
+      <span class="form__bottom">*Поля обязательные для заполнения</span>
       <input class="button form__toggle" name="send_form" type="submit" value="Отправить заказ">
     </form>
   </main>
