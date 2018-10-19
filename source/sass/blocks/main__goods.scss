@@ -1,22 +1,51 @@
 .goods {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include tablet() {
+    position: relative;
+    margin: 0 50px;
+  }
+
+  @include desktop() {
+    margin: 0 100px;
+  }
 }
 
 .goods__list {
   margin: 0;
   padding: 0;
+
+  @include tablet() {
+    position: absolute;
+    top: -110px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @include desktop() {
+    justify-content: space-between;
+  }
+
+  @include desktop() {
+    top: -120px;
+  }
 }
 
 .goods__item {
   margin: 0;
   list-style: none;
+
+  @include tablet() {
+    min-height: 110px;
+  }
+
+  @include desktop()
+    width: 100%;
 }
 
-.goods__item a {
-  display: block;
-  height: 100%;
+.goods__link {
+  display: flex;
+  justify-content: space-around;
+  //height: 100%;
   margin: 0;
   text-decoration: none;
   color: #ffffff;
@@ -24,16 +53,57 @@
   line-height: 24px;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  padding-top: 29px;
-  padding-bottom: 29px;
-  padding-right: 180px;
-  padding-left: 29px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  @include tablet() {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include desktop() {
+    //padding-right: 375px;
+    padding-left: 35px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+}
+
+.goods__text {
+  margin-left: 29px;
+  width: 50%;
+
+  @include tablet() {
+    margin-left: 36px;
+    margin-right: 32px;
+  }
+
+  @include desktop() {
+    margin-left: 0;
+    margin-right: 65px;
+  }
+}
+
+.goods__img {
+  width: 50%;
+
+  @include desktop() {
+    margin-left: 190px;
+  }
 }
 
 .goods__item--interior {
   background-color: #63d1bb;
 }
 
+.goods__img--interior {
+  fill: #27a08e;
+}
+
 .goods__item--toys {
   background-color: #55c3b2;
+}
+
+.goods__img--toys {
+  fill: #34a998;
 }

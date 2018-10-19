@@ -18,7 +18,12 @@
 body {
   background-color: #ffffff;
   font-family: "OpenSans", "Arial", sans-serif;
+  color: #000000;
   font-weight: normal;
+}
+
+a {
+  color: #000000;
 }
 
 .partition {
@@ -41,7 +46,6 @@ body {
 .button {
   border: 2px solid #434343;
   background: transparent;
-  width: 255px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 17px;
@@ -50,4 +54,20 @@ body {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
