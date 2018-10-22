@@ -58,6 +58,16 @@
   padding-top: 23px;
   padding-bottom: 19px;
 
+  &:hover,
+  &:focus {
+    padding-bottom: 33px;
+    margin-top: -5px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @include tablet() {
     font-size: 20px;
     line-height: 30px;

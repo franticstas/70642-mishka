@@ -136,6 +136,15 @@
   text-decoration: none;
   position: relative;
 
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     display: block;

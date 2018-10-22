@@ -42,6 +42,17 @@
   }
 }
 
+.header__logo-link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .header__logo-link {
   display: inline-block;
   margin: 0 auto;
@@ -188,6 +199,17 @@
   }
 }
 
+.site-list__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .site-list__link {
   font-size: 17px;
   line-height: 24px;
@@ -241,6 +263,17 @@
 
   @include desktop() {
     justify-content: end;
+  }
+}
+
+.user-list__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -348,6 +381,17 @@
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+.user-nav-second__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .user-nav-second__link {

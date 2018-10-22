@@ -24,6 +24,15 @@
   flex-direction: column;
   border: 1px solid #f1f1f1;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+
   @include tablet() {
     margin-left: 50px;
     margin-right: 50px;
@@ -34,7 +43,6 @@
     min-height: 455px;
   }
 }
-
 //---------------------------Блок заголовка-----------------------------------
 .production__block {
   display: flex;

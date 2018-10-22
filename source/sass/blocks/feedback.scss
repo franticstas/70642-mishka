@@ -190,6 +190,15 @@
   padding-left: 35px;
   padding-right: 35px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include tablet() {
     border: none;
 

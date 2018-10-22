@@ -54,6 +54,16 @@ a {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
