@@ -1,3 +1,15 @@
+.catalog-main__articles {
+  @include tablet() {
+    margin-top: 67px;
+  }
+
+  @include desktop() {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1150px;
+  }
+}
+
 //----------------------------------Секция товаров------------------------------
 .articles__list {
   margin: 0;
@@ -8,7 +20,7 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 125px;
+    padding-top: 55px;
   }
 }
 
@@ -25,7 +37,7 @@
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 55px;
+    margin-top: 52px;
     justify-content: space-between;
   }
 
@@ -69,7 +81,7 @@
     height: 334px;
   }
 
-  @include  desktop() {
+  @include desktop() {
     width: 316px;
     height: 462px;
     display: block;
@@ -82,15 +94,16 @@
   flex-direction: column;
   padding-left: 28px;
   padding-right: 28px;
-  padding-top: 31px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 26px;
 
   @include tablet() {
     justify-content: space-between;
     min-width: 265px;
+    padding-right: 32px;
   }
 
-  @include  desktop() {
+  @include desktop() {
     padding-top: 25px;
     height: 100%;
   }
@@ -112,6 +125,11 @@
 
   @include tablet() {
     font-size: 20px;
+    padding-right: 42px;
+  }
+
+  @include desktop() {
+    padding-right: 35px;
   }
 }
 
@@ -140,6 +158,10 @@
   align-items: end;
   padding-top: 20px;
   border-top: 1px solid #ebebeb;
+
+  @include desktop() {
+    margin-top: 14px;
+  }
 }
 
 //----------------------------------Цена товара------------------------------
@@ -158,4 +180,8 @@
 //----------------------------------Добавление товара в корзину------------------------------
 .articles__cart-image {
   fill: #d9d9d9;
+
+  @include desktop() {
+    padding-right: 9px;
+  }
 }

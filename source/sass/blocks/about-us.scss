@@ -5,6 +5,12 @@
   @include tablet() {
     padding-bottom: 80px;
   }
+
+  @include desktop() {
+    padding-bottom: 90px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .about-us__wrapper {
@@ -16,7 +22,8 @@
   }
 
   @include desktop() {
-    padding: 0 270px;
+    padding: 0 223px;
+    padding-top: 59px;
   }
 }
 
@@ -27,15 +34,16 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
 
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 49px;
   }
 
   @include desktop() {
-    padding-top: 70px;
+    padding-top: 0;
     font-size: 53px;
     line-height: 57px;
   }
@@ -51,6 +59,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @include desktop() {
+    justify-content: flex-start;
+  }
 }
 
 .about-us__item {
@@ -58,6 +70,11 @@
 
   @include tablet() {
     width: 330px;
+    padding-top: 49px;
+  }
+
+  @include desktop() {
+    padding-right: 22px;
   }
 }
 
@@ -67,7 +84,7 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 
   @include tablet() {
     padding-right: 35px;

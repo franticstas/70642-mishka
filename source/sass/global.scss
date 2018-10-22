@@ -71,3 +71,19 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @include tablet() {
+    padding: 0 51px;
+    margin: 0 auto;
+  }
+
+  @include desktop() {
+    padding: 0 114px;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+}

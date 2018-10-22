@@ -2,14 +2,16 @@
   position: relative;
 
   @include desktop() {
-    padding-left: 100px;
-    padding-right: 100px;
+    max-width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
   }
 
   &::before {
     @include tablet() {
       position: absolute;
-      content: '';
+      content: "";
       width: 350px;
       height: 457px;
       background-image: url("../img/review@1x.jpg");
@@ -18,11 +20,10 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat-x;
     bottom: 0;
@@ -33,29 +34,44 @@
     }
 
     @include desktop() {
-      height: 23px;
-      //margin-left: 100px;
-      //margin-right: 100px;
+      height: 0;
     }
   }
 }
 
 .feedback__wrapper {
   padding: 0 32px;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 24px;
+  padding-bottom: 50px;
   margin: 0 auto;
 
   @include tablet() {
     padding: 0 50px;
-    padding-top: 85px;
-    padding-bottom: 90px;
+    padding-top: 81px;
+    padding-bottom: 100px;
     position: relative;
   }
+
   @include desktop() {
     padding-right: 0;
     padding-left: 170px;
-    padding-bottom: 125px;
+    padding-bottom: 155px;
+    padding-top: 71px;
+  }
+
+  &::after {
+    @include desktop() {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-line.svg");
+      //background-size: contain;
+      background-repeat: repeat-x;
+      bottom: 0;
+      left: 0;
+      height: 23px;
+    }
   }
 }
 
@@ -80,7 +96,7 @@
 }
 
 .slider {
-  margin-bottom: 20px;
+  margin-bottom: 37px;
 }
 
 .slider__content {
@@ -92,10 +108,20 @@
 }
 
 .slider__description {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 30px;
+
   @include tablet() {
     font-size: 17px;
     line-height: 30px;
     margin-top: 50px;
+  }
+
+  @include desktop() {
+    margin-top: 48px;
+    padding-left: 6px;
+    padding-right: 100px;
   }
 }
 
@@ -105,18 +131,20 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 5px;
 
   @include tablet() {
     font-size: 18px;
     line-height: 24px;
-    margin-top: 50px;
+    margin-top: 57px;
   }
 
   @include desktop() {
     font-size: 17px;
     line-height: 24px;
+    margin-top: 39px;
+    padding-left: 7px;
   }
 }
 
@@ -124,7 +152,7 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  text-decoration: none;  
+  text-decoration: none;
 
   @include tablet() {
     font-size: 18px;
@@ -133,6 +161,7 @@
 
   @include desktop() {
     font-size: 17px;
+    padding-left: 7px;
   }
 }
 
@@ -141,13 +170,14 @@
 
   @include tablet() {
     position: absolute;
-    right: 50px;
-    bottom: 115px;
+    right: 29px;
+    bottom: 135px;
+    width: 215px;
   }
 
   @include desktop() {
-    right: 0;
-    bottom: 150px;
+    right: -21px;
+    bottom: 190px;
   }
 }
 
@@ -166,6 +196,7 @@
     &--prew {
       padding-right: 15px;
     }
+
     &--next {
       padding-left: 15px;
     }
@@ -192,5 +223,6 @@
 
   @include desktop() {
     right: 0;
+    top: 78px;
   }
 }

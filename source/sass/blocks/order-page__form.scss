@@ -1,21 +1,17 @@
-.form {
-  padding-left: 29px;
-  padding-right: 28px;
-}
-
 .form__group {
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
+  padding-bottom: 31px;
   border-top: 1px solid #62d1ba;
   border-left: none;
   border-right: none;
   border-bottom: none;
 
   @include tablet() {
-    display: flex;
-    justify-content: space-between;
-    border: none;
+    position: relative;
+    border-top: none;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -27,11 +23,31 @@
   font-weight: bold;
   position: relative;
   padding-right: 27px;
-  margin-bottom: 27px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
 
   @include tablet() {
-    display: inline-block;
-    width: 70px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+}
+
+.form__wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  @include tablet() {
+    flex-direction: column;
+    margin-left: 165px;
+    padding-bottom: 30px;
+  }
+
+  @include desktop() {
+    margin-left: 111px;
+    padding-bottom: 29px;
   }
 }
 
@@ -43,12 +59,29 @@
   font-weight: bold;
   display: inline-block;
   padding-left: 22px;
+
+  @include tablet() {
+    font-size: 19px;
+    padding-left: 29px;
+  }
 }
 
 //-------------------------------Оформление RADIO-------------------------------------
+.form__type {
+  @include tablet() {
+    background-color: #ffffff;
+  }
+}
+
 .label__radio {
   display: flex;
   align-items: center;
+  margin-top: 16px;
+
+  @include tablet() {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .radio {
@@ -57,16 +90,16 @@
 
 .radio-custom {
   position: relative;
-  width: 40px;
-  height: 40px;
+  min-width: 36px;
+  min-height: 36px;
   border: 2px solid #434343;
-}
+  border-radius: 50%;
 
-.label__text {
-  display: inline-block;
-  //vertical-align: middle;
+  @include tablet() {
+    min-width: 48px;
+    min-height: 48px;
+  }
 }
-
 
 .radio:checked + .radio-custom::before {
   content: "";
@@ -74,28 +107,63 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 12px;
-  left: 12px;
+  top: 10px;
+  left: 10px;
   background: #61d1b9;
   border-radius: 50%;
-}
 
-.radio-custom,
-.radio:checked + .radio-custom::before {
-  border-radius: 50%;
+  @include tablet() {
+    width: 21px;
+    height: 21px;
+    top: 16px;
+    left: 15px;
+  }
 }
 
 //-------------------------------Оформление CHECKBOX-------------------------------------
-.label__checkbox {
-  display: flex;
-  align-items: center;
+.form__group--color {
   padding-bottom: 22px;
 }
 
-.form__checkbox-group {
+.form__color {
+  @include tablet() {
+    background-color: #f1f1f1;
+  }
+}
+
+.form__legend--color {
+  @include tablet() {
+    top: 68px;
+  }
+}
+
+.label__checkbox {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 5px;
+
+  @include tablet() {
+    margin-right: 34px;
+    margin-bottom: 24px;
+    min-width: 204px;
+  }
+
+  @include desktop() {
+    margin-right: 66px;
+  }
+}
+
+.form__wrap--color {
+  min-height: 358px;
+  justify-content: space-between;
+  padding-top: 8px;
+
+  @include tablet() {
+    flex-direction: row;
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
 }
 
 .checkbox {
@@ -103,101 +171,297 @@
 }
 
 .checkbox-custom {
-  width: 40px;
-  height: 39px;
+  width: 37px;
+  height: 37px;
   display: inline-block;
   border: 2px solid #434343;
   position: relative;
+
+  @include tablet() {
+    width: 50px;
+    height: 48px;
+  }
 }
 
 .checkbox:checked + .checkbox-custom::before {
   content: "";
   position: absolute;
-  top: 19px;
+  top: 21px;
   left: 6px;
-  width: 10px;
+  width: 14px;
   height: 3px;
   background: #000000;
-  -webkit-transform: rotate(50deg);
   transform: rotate(50deg);
 }
 
 .checkbox:checked + .checkbox-custom::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 10px;
-  width: 16px;
+  top: 19px;
+  left: 13px;
+  width: 25px;
   height: 3px;
   background: #000000;
-  -webkit-transform: rotate(-50deg);
   transform: rotate(-50deg);
 }
 
 //-------------------------------Оформление ФИО-------------------------------------
+.form__full-name {
+  background-color: #ffffff;
+}
+
+.form__legend--full-name {
+  margin-bottom: 5px;
+
+  @include tablet() {
+    top: 67px;
+  }
+}
+
+.form__wrap--full-name {
+  padding-top: 24px;
+
+  @include tablet() {
+    margin-left: 166px;
+    padding-bottom: 27px;
+    padding-top: 21px;
+  }
+
+  @include desktop() {
+    padding-right: 111px;
+    margin-left: 113px;
+  }
+}
+
+.label__full-name {
+  @include tablet() {
+    display: flex;
+  }
+}
+
+.full-name {
+  padding-bottom: 9px;
+
+  @include tablet() {
+    padding-bottom: 4px;
+  }
+}
+
 .full-name__title {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
+
+  @include tablet() {
+    font-size: 19px;
+    padding-top: 17px;
+    padding-right: 25px;
+  }
 }
 
 .text-placeholder {
   width: 100%;
   padding: 0;
   padding-top: 18px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
   border: none;
   border-bottom: 2px solid #000000;
   margin-bottom: 22px;
+  box-sizing: border-box;
 
   &::placeholder {
-    color: rgba(0,0,0,0.3);
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @include tablet() {
+    padding-left: 16px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 
-//-------------------------------Оформление ТЕЛ-------------------------------------
-.text-placeholder--phone {
+//-------------------------------Общее оформление КОНТАКТОВ-------------------------------------
+.form__contacts {
+  @include tablet() {
+    background-color: #f1f1f1;
+  }
+}
+
+.form__legend--contacts {
+  @include tablet() {
+    top: 68px;
+  }
+}
+
+.form__wrap--contacts {
+  @include tablet() {
+    margin-left: 166px;
+  }
+
+  @include desktop() {
+    padding-right: 111px;
+    margin-left: 111px;
+  }
+}
+
+.text-placeholder--contacts {
+  padding-right: 20px;
+  padding-top: 10px;
+
+  @include tablet() {
+    background-color: #f1f1f1;
+    color: #444444;
+    margin-bottom: 5px;
+  }
+}
+//-------------------------------Оформление ТЕЛЕФОН-------------------------------------
+.label__phone {
   position: relative;
 
   &::after {
     position: absolute;
     display: block;
     content: "";
-    width: 14px;
-    height: 14px;
-    top: 0;
+    width: 25px;
+    height: 24px;
+    background-image: url("../img/icon-phone.svg");
     right: 0;
-    background: url("../img/icon-phone.svg");
+    top: 2px;
   }
 }
 
-//-------------------------------Оформление ТЕЛ-------------------------------------
-.textarea {
+.form__group--phone {
+  padding-bottom: 12px;
+
+  @include tablet() {
+    padding-top: 58px;
+  }
+}
+
+//-------------------------------Оформление EMAIL-------------------------------------
+.label__email {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 26px;
+    background-image: url("../img/icon-mail.svg");
+    right: 0;
+    top: 0;
+  }
+}
+
+.form__group--email {
+  padding-bottom: 12px;
+
+  @include tablet() {
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+}
+
+.form__legend--email {
+  @include tablet() {
+    top: 25px;
+  }
+}
+//----------------------------------Оформление пожеланий--------------------------------
+.form__group--wish {
+  padding-bottom: 12px;
+}
+
+.form__legend--wish {
+  @include tablet() {
+    top: 68px;
+  }
+}
+
+.form__wrap--wish {
+  @include tablet() {
+    margin-left: 166px;
+  }
+
+  @include desktop() {
+    padding-right: 111px;
+    margin-left: 111px;
+  }
+}
+
+.form__wish-textarea {
+  margin-top: 15px;
+  box-sizing: border-box;
   border: 2px solid #000000;
+  height: 139px;
   width: 100%;
-  //padding-top: 18px;
-  //padding-left: 17px;
-  //padding-right: 80px;
 
   &::placeholder {
-    color: rgba(0,0,0,0.3);
-    padding-top: 18px;
-    padding-left: 17px;
-    padding-right: 80px;
+    color: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 60px;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  @include tablet() {
+    margin-top: 21px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 }
 //---------------------------------------------------------------------------------------
+.form__wrap-bottom {
+  padding-bottom: 55px;
+
+  @include tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    padding-top: 36px;
+    padding-right: 111px;
+    padding-left: 111px;
+  }
+}
+
 .form__bottom {
   font-size: 14px;
   line-height: 16px;
   color: #444444;
   display: inline-block;
   padding-bottom: 31px;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+    padding-bottom: 0;
+  }
 }
 
 .form__toggle {
   width: 100%;
-  margin-bottom: 55px;
+  text-transform: uppercase;
+
+  @include tablet() {
+    padding-left: 31px;
+    padding-right: 31px;
+    width: auto;
+    order: 1;
+  }
 }

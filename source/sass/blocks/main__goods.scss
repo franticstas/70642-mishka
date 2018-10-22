@@ -5,7 +5,8 @@
   }
 
   @include desktop() {
-    margin: 0 100px;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -15,7 +16,7 @@
 
   @include tablet() {
     position: absolute;
-    top: -110px;
+    top: -120px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -38,8 +39,9 @@
     min-height: 110px;
   }
 
-  @include desktop()
+  @include desktop() {
     width: 100%;
+  }
 }
 
 .goods__link {
@@ -53,12 +55,14 @@
   line-height: 24px;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  padding-top: 19px;
+  padding-top: 23px;
   padding-bottom: 19px;
 
   @include tablet() {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 28px;
+    padding-bottom: 26px;
   }
 
   @include desktop() {
@@ -71,11 +75,12 @@
 
 .goods__text {
   margin-left: 29px;
+  margin-right: 65px;
   width: 50%;
 
   @include tablet() {
-    margin-left: 36px;
-    margin-right: 32px;
+    margin-left: 28px;
+    margin-right: 49px;
   }
 
   @include desktop() {

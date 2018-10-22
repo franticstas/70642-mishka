@@ -1,11 +1,18 @@
 .catalog-main__production {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 52px;
   margin-bottom: 58px;
+
+  @include tablet() {
+    margin-bottom: 63px;
+  }
 
   @include desktop() {
     margin-top: 57px;
     margin-bottom: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
   }
 }
 
@@ -32,7 +39,7 @@
 .production__block {
   display: flex;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 34px;
   padding-right: 34px;
@@ -40,15 +47,15 @@
   @include tablet() {
     order: 2;
     padding-left: 40px;
+    padding-top: 29px;
     padding-bottom: 0;
   }
 
   @include desktop() {
     padding-left: 760px;
     padding-right: 150px;
-    padding-top: 47px;
+    padding-top: 30px;
     flex-direction: column;
-    //justify-content: flex-start;
     align-items: start;
   }
 }
@@ -105,7 +112,7 @@
 
 //---------------------------Второй блок производства-----------------------------------
 .production__block-second {
-  padding-top: 34px;
+  padding-top: 25px;
   padding-left: 34px;
   padding-right: 34px;
   padding-bottom: 33px;
@@ -113,11 +120,14 @@
   @include tablet() {
     order: 3;
     padding-left: 40px;
+    padding-right: 41px;
+    padding-bottom: 43px;
   }
 
   @include desktop() {
     padding-left: 760px;
-    padding-right: 67px;
+    padding-right: 57px;
+    padding-top: 33px;
   }
 }
 
@@ -132,10 +142,11 @@
   @include tablet() {
     font-size: 15px;
     line-height: 30px;
+    padding-bottom: 33px;
   }
 
   @include desktop() {
-    padding-bottom: 50px;
+    padding-bottom: 46px;
   }
 }
 
