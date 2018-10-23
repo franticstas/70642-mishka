@@ -2,11 +2,13 @@
   @include tablet() {
     position: relative;
     margin: 0 50px;
+    margin-top: -120px;
   }
 
   @include desktop() {
     max-width: 1050px;
     margin: 0 auto;
+    margin-top: -121px;
   }
 }
 
@@ -15,8 +17,8 @@
   padding: 0;
 
   @include tablet() {
-    position: absolute;
-    top: -120px;
+    //position: absolute;
+    //top: -120px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -32,7 +34,7 @@
   list-style: none;
 
   @include tablet() {
-    min-height: 110px;
+    //min-height: 110px;
   }
 
   @include desktop() {
@@ -70,8 +72,8 @@
 }
 
 .goods__item:hover {
-  //padding-bottom: 5px;
-  transform: scale(1, 1.8);
+  margin-top: -5px;
+  padding-bottom: 5px;
 }
 
 .goods__text {

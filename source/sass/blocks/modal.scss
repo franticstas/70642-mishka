@@ -99,11 +99,22 @@
   text-align: center;
   box-sizing: border-box;
   padding-top: 15px;
+  cursor: pointer;
 
   @include tablet() {
     width: 110px;
   }
 }
+
+.modal__radio:hover + .modal__radio-custom,
+.modal__radio:focus + .modal__radio-custom {
+  border-color: #c6c6c6;
+}
+
+.modal__radio:active + .modal__radio-custom {
+  border-color: #61d1b9;
+}
+
 
 .modal__radio:checked + .modal__radio-custom {
   border: 1px solid #63d1bb;
