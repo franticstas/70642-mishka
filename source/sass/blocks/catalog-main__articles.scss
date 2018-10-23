@@ -123,6 +123,17 @@
   text-decoration: none;
 }
 
+.articles__link-name[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 //----------------------------------Название товара------------------------------
 .articles__title {
   font-size: 17px;
@@ -193,4 +204,22 @@
   @include desktop() {
     padding-right: 9px;
   }
+}
+
+.articles__cart[href] .articles__cart-image {
+  width: 21px;
+  height: 18px;
+  fill: #d3d2d2;
+}
+
+.articles__cart[href]:hover .articles__cart-image {
+  fill: #63d1bb;
+}
+
+.articles__cart[href]:focus .articles__cart-image {
+  fill: #63d1bb;
+}
+
+.articles__cart[href]:active .articles__cart-image {
+  fill: rgba(#63d1bb, 0.3);
 }

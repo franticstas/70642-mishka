@@ -269,13 +269,36 @@
 .user-list__link[href] {
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(#000000, 0.6);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(#000000, 0.3);
   }
 }
+
+.user-list__link[href] .user-list__search-img,
+.user-list__link[href] .user-list__cart-img {
+  width: 18px;
+  height: 18px;
+  fill: #d3d2d2;
+}
+
+.user-list__link[href]:hover .user-list__search-img,
+.user-list__link[href]:hover .user-list__cart-img {
+  fill: #63d1bb;
+}
+
+.user-list__link[href]:focus .user-list__search-img,
+.user-list__link[href]:focus .user-list__cart-img {
+  fill: #63d1bb;
+}
+
+.user-list__link[href]:active .user-list__search-img,
+.user-list__link[href]:active .user-list__cart-img {
+  fill: rgba(#63d1bb, 0.3);
+}
+
 
 .user-list__link {
   font-size: 17px;
