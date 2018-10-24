@@ -1,5 +1,6 @@
 .product-week {
   position: relative;
+  overflow: hidden;
 
   @include tablet() {
     padding-bottom: 67px;

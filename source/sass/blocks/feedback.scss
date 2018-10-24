@@ -1,5 +1,6 @@
 .feedback {
   position: relative;
+  overflow: hidden;
 
   @include desktop() {
     max-width: 1050px;

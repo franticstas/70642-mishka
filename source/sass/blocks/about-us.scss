@@ -1,6 +1,7 @@
 .about-us {
   margin: 0 auto;
   padding-bottom: 27px;
+  overflow: hidden;
 
   @include tablet() {
     padding-bottom: 80px;

@@ -1,4 +1,6 @@
 .catalog-main__articles {
+  overflow: hidden;
+
   @include tablet() {
     margin-top: 67px;
   }
@@ -70,9 +72,9 @@
   margin: 0 auto;
 
   @include tablet() {
-    width: 334px;
-    height: 334px;
+    width: 50%;
     margin: 0;
+
   }
 
   @include desktop() {
@@ -108,8 +110,10 @@
 
   @include tablet() {
     justify-content: space-between;
-    min-width: 265px;
+    //min-width: 265px;
+    width: 50%;
     padding-right: 32px;
+    margin-left: 5px;
   }
 
   @include desktop() {

@@ -2,6 +2,7 @@
   margin: 0 auto;
   margin-top: 52px;
   margin-bottom: 58px;
+  overflow: hidden;
 
   @include tablet() {
     margin-bottom: 63px;

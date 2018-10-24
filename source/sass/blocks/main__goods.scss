@@ -1,4 +1,5 @@
 .goods {
+  //overflow: hidden;
   @include tablet() {
     position: relative;
     margin: 0 50px;
@@ -35,6 +36,7 @@
 
   @include tablet() {
     //min-height: 110px;
+    //width: 334px;
   }
 
   @include desktop() {
@@ -61,6 +63,8 @@
     line-height: 30px;
     padding-top: 28px;
     padding-bottom: 26px;
+    justify-content: space-between;
+    //width: 334px;
   }
 
   @include desktop() {
@@ -82,8 +86,11 @@
   width: 50%;
 
   @include tablet() {
-    margin-left: 28px;
-    margin-right: 49px;
+    //margin-left: 28px;
+    //margin-right: 49px;
+    margin-right: 0;
+    //margin-left: 0;
+    max-width: 115px;
   }
 
   @include desktop() {
@@ -95,8 +102,13 @@
 .goods__img {
   width: 50%;
 
+  @include tablet() {
+    width: 140px;
+  }
+
   @include desktop() {
-    margin-left: 190px;
+    //margin-left: 190px;
+    //width: 140px;
   }
 }
 
