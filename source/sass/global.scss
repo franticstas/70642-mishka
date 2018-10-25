@@ -20,10 +20,18 @@ body {
   font-family: "OpenSans", "Arial", sans-serif;
   color: #000000;
   font-weight: normal;
+
 }
 
 a {
   color: #000000;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .partition {
@@ -45,7 +53,7 @@ a {
 
 .button {
   border: 2px solid #434343;
-  background: transparent;
+  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 17px;
@@ -54,6 +62,16 @@ a {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -69,5 +87,25 @@ a {
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @include tablet() {
+    padding: 0 51px;
+    margin: 0 auto;
+  }
+
+  @include desktop() {
+    padding: 0 114px;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+}
+
+.svg-hidden {
   overflow: hidden;
 }

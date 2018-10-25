@@ -1,11 +1,11 @@
 .catalog-main__title-block {
   background-color: #f1f1f1;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 77px;
 
   @include tablet() {
-    padding-top: 104px;
-    padding-bottom: 80px;
+    padding-top: 96px;
+    padding-bottom: 90px;
     position: relative;
 
     &::after {
@@ -13,12 +13,16 @@
       display: block;
       content: "";
       background-image: url("../img/bg-zigzag-fill.svg");
-      -webkit-background-size: contain;
       background-size: contain;
       height: 24px;
       width: 100%;
-      bottom: -1px;
+      bottom: -2px;
     }
+  }
+
+  @include desktop() {
+    padding-top: 93px;
+    padding-bottom: 110px;
   }
 }
 
@@ -30,5 +34,10 @@
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

@@ -1,9 +1,16 @@
 .about-us {
   margin: 0 auto;
   padding-bottom: 27px;
+  //overflow: hidden; //TODO overflow
 
   @include tablet() {
     padding-bottom: 80px;
+  }
+
+  @include desktop() {
+    padding-bottom: 90px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +23,8 @@
   }
 
   @include desktop() {
-    padding: 0 270px;
+    padding: 0 223px;
+    padding-top: 59px;
   }
 }
 
@@ -27,15 +35,16 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
 
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 49px;
   }
 
   @include desktop() {
-    padding-top: 70px;
+    padding-top: 0;
     font-size: 53px;
     line-height: 57px;
   }
@@ -51,13 +60,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @include desktop() {
+    justify-content: space-around;
+  }
 }
 
 .about-us__item {
   padding-top: 30px;
 
   @include tablet() {
-    width: 330px;
+    width: 326px;
+    padding-top: 49px;
+  }
+
+  @include desktop() {
+    padding-right: 17px;
   }
 }
 
@@ -67,13 +85,22 @@
   color: #000000;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 
   @include tablet() {
     padding-right: 35px;
     font-size: 20px;
     line-height: 22px;
   }
+
+  @include desktop() {
+    padding-right: 87px;
+  }
+}
+
+.about-us__img {
+  width: 50px;
+  height: 50px;
 }
 
 .about-us__eco {
@@ -84,6 +111,8 @@
 
 .about-us__eco-img {
   fill: #63d1bb;
+  width: 32px;
+  height: 37px;
 }
 
 .about-us__rus-price {
@@ -94,6 +123,8 @@
 
 .about-us__rus-price-img {
   fill: #63d1bb;
+  width: 47px;
+  height: 27px;
 }
 
 .about-us__likes {
@@ -104,6 +135,8 @@
 
 .about-us__likes-img {
   fill: #63d1bb;
+  width: 34px;
+  height: 27px;
 }
 
 .about-us__handmade {
@@ -114,6 +147,8 @@
 
 .about-us__handmade-img {
   fill: #63d1bb;
+  width: 35px;
+  height: 34px;
 }
 
 .about-us__production {
@@ -124,6 +159,8 @@
 
 .about-us__production-img {
   fill: #63d1bb;
+  width: 55px;
+  height: 23px;
 }
 
 .about-us__pack {
@@ -134,4 +171,6 @@
 
 .about-us__pack-img {
   fill: #63d1bb;
+  width: 33px;
+  height: 32px;
 }

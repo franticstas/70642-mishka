@@ -1,11 +1,19 @@
 .catalog-main__production {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 26px;
   margin-bottom: 58px;
+  overflow: hidden;
+
+  @include tablet() {
+    margin-bottom: 63px;
+  }
 
   @include desktop() {
     margin-top: 57px;
     margin-bottom: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
   }
 }
 
@@ -17,6 +25,15 @@
   flex-direction: column;
   border: 1px solid #f1f1f1;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+
   @include tablet() {
     margin-left: 50px;
     margin-right: 50px;
@@ -27,12 +44,11 @@
     min-height: 455px;
   }
 }
-
 //---------------------------Блок заголовка-----------------------------------
 .production__block {
   display: flex;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 28px;
   padding-bottom: 25px;
   padding-left: 34px;
   padding-right: 34px;
@@ -40,15 +56,15 @@
   @include tablet() {
     order: 2;
     padding-left: 40px;
+    padding-top: 29px;
     padding-bottom: 0;
   }
 
   @include desktop() {
     padding-left: 760px;
     padding-right: 150px;
-    padding-top: 47px;
+    padding-top: 30px;
     flex-direction: column;
-    //justify-content: flex-start;
     align-items: start;
   }
 }
@@ -88,6 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   @include tablet() {
     width: 668px;
@@ -103,9 +120,43 @@
   }
 }
 
+.production__play {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/icon-play.svg");
+  //top: 27%;
+  //left: 33%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  //@include tablet() {
+  //  top: 43%;
+  //  left: 42%;
+  //}
+  //
+  //@include desktop() {
+  //  top: 42%;
+  //  left: 43%;
+  //}
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
 //---------------------------Второй блок производства-----------------------------------
 .production__block-second {
-  padding-top: 34px;
+  padding-top: 25px;
   padding-left: 34px;
   padding-right: 34px;
   padding-bottom: 33px;
@@ -113,11 +164,14 @@
   @include tablet() {
     order: 3;
     padding-left: 40px;
+    padding-right: 41px;
+    padding-bottom: 43px;
   }
 
   @include desktop() {
     padding-left: 760px;
-    padding-right: 67px;
+    padding-right: 57px;
+    padding-top: 33px;
   }
 }
 
@@ -132,10 +186,11 @@
   @include tablet() {
     font-size: 15px;
     line-height: 30px;
+    padding-bottom: 33px;
   }
 
   @include desktop() {
-    padding-bottom: 50px;
+    padding-bottom: 46px;
   }
 }
 

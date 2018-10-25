@@ -1,41 +1,31 @@
 .contacts {
+  overflow: hidden; //TODO overflow
+
   @include desktop() {
     position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .contacts__wrapper-top {
-  padding: 0 32px;
+  padding-right: 32px;
+  padding-left: 29px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 34px;
+  padding-bottom: 36px;
 
   @include tablet() {
     padding: 0 50px;
     padding-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
 
   @include desktop() {
-    padding-top: 110px;
-    padding-bottom: 60px;
-  }
-}
-
-.contacts__wrapper-bottom {
-  padding: 0 32px;
-  margin: 0 auto;
-  padding-bottom: 35px;
-
-  @include tablet() {
-    padding: 0 50px;
-    padding-bottom: 55px;
-  }
-
-  @include  desktop() {
-    padding-bottom: 100px;
+    padding-top: 127px;
+    padding-bottom: 47px;
   }
 }
 
@@ -47,7 +37,7 @@
     align-content: center;
   }
 
-  @include  desktop() {
+  @include desktop() {
     justify-content: start;
     padding-left: 10px;
   }
@@ -72,6 +62,7 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 25px;
 
   @include tablet() {
     font-size: 43px;
@@ -94,14 +85,15 @@
   @include tablet() {
     display: flex;
     font-size: 17px;
-    padding-top: 30px;
+    padding-top: 32px;
   }
 
   @include desktop() {
     flex-direction: column;
     padding-left: 120px;
-    padding-right: 500px;
+    padding-right: 525px;
     margin-bottom: 30px;
+    padding-top: 36px;
   }
 }
 
@@ -111,7 +103,7 @@
 }
 
 .contacts__row--email {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   @include tablet() {
     margin-right: 50px;
@@ -120,15 +112,27 @@
 
 .contacts__name {
   margin-right: 28px;
+  min-width: 50px;
 
   @include tablet() {
     min-width: 55px;
+    margin-right: 23px;
   }
 }
 
 .contacts__link {
   text-decoration: none;
   position: relative;
+  margin-right: 18px;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     position: absolute;
@@ -138,13 +142,18 @@
     height: 1px;
     background-color: #27a08e;
   }
+
+  @include tablet() {
+    margin-right: 0;
+  }
 }
 
 .contacts__address {
   font-style: normal;
+  padding-right: 40px;
 
   @include tablet() {
-    //min-width: 215px;
+    padding-right: 0;
   }
 }
 
@@ -153,28 +162,42 @@
   width: 60px;
 }
 
+.contacts__map iframe,
 .contacts__map {
   height: 455px;
-  background-image: url("../img/map-mobile@1x.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-bottom: 60px;
+  width: 320px;
+  //background-image: url("../img/map-mobile@1x.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 41px;
 
   @include tablet() {
     width: 768px;
     height: 457px;
-    background-image: url("../img/map-tablet@1x.jpg");
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 55px;
   }
 
   @include desktop() {
     position: absolute;
     width: 525px;
-    background-image: url("../img/map-desktop@1x.jpg");
-    top: 70px;
-    right: 0;
+    top: 34px;
+    right: 24px;
+  }
+}
+
+.contacts__wrapper-bottom {
+  padding: 0 32px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+
+  @include tablet() {
+    padding: 0 263px;
+    padding-bottom: 55px;
+  }
+
+  @include desktop() {
+    padding-bottom: 100px;
+    padding-left: 0;
   }
 }
 
@@ -185,18 +208,23 @@
   position: relative;
   margin: 0 auto;
   //margin-bottom: 35px;
-  width: 255px;
+  //width: 255px;
   font-size: 18px;
   line-height: 20px;
 
   @include tablet() {
     font-size: 17px;
-    //margin-bottom: 55px;
+    width: max-content;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   @include desktop() {
-    margin-left: 120px;
+    //margin-left: -95 px;
+    margin-left: 168px;
+    margin-right: 356px;
+    //margin-left: 128px;
+    //margin-right: 650px;
     margin-bottom: 0;
   }
 }
-
