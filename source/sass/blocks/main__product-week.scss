@@ -1,6 +1,6 @@
 .product-week {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden; //TODO overflow
 
   @include tablet() {
     padding-bottom: 67px;
@@ -102,7 +102,7 @@
     order: 2;
     font-size: 53px;
     line-height: 57px;
-    padding-top: 42px;
+    padding-top: 37px;
   }
 }
 

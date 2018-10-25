@@ -53,7 +53,7 @@ a {
 
 .button {
   border: 2px solid #434343;
-  background: transparent;
+  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 17px;
@@ -104,4 +104,8 @@ a {
     margin: 0 auto;
     max-width: 1150px;
   }
+}
+
+.svg-hidden {
+  overflow: hidden;
 }

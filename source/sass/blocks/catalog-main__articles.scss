@@ -2,12 +2,13 @@
   overflow: hidden;
 
   @include tablet() {
-    margin-top: 67px;
+    margin-top: 38px;
   }
 
   @include desktop() {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 38px;
     max-width: 1150px;
   }
 }
@@ -16,6 +17,11 @@
 .articles__list {
   margin: 0;
   padding: 0;
+
+  @include tablet() {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   @include desktop() {
     display: flex;
@@ -46,10 +52,11 @@
 
   @include tablet() {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 52px;
+    margin-left: 0;
+    margin-right: 0;
+    //margin-top: 52px;
     justify-content: space-between;
+    min-width: 669px;
   }
 
   @include media(1024px) {
@@ -72,14 +79,15 @@
   margin: 0 auto;
 
   @include tablet() {
-    width: 50%;
+    width: 334px;
+    height: 334px;
     margin: 0;
 
   }
 
   @include desktop() {
-    width: 316px;
-    height: 462px;
+    //width: 316px;
+    //height: 462px;
   }
 }
 
@@ -90,6 +98,7 @@
   @include tablet() {
     width: 334px;
     height: 334px;
+    margin-right: 27px;
   }
 
   @include desktop() {
@@ -105,15 +114,17 @@
   flex-direction: column;
   padding-left: 28px;
   padding-right: 28px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 26px;
 
   @include tablet() {
     justify-content: space-between;
     //min-width: 265px;
-    width: 50%;
+    //width: 50%;
+    width: 308px;
     padding-right: 32px;
-    margin-left: 5px;
+    padding-left: 25px;
+   // margin-left: 5px;
   }
 
   @include desktop() {
@@ -131,6 +142,7 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    //padding-bottom: 5px;
   }
 
   &:active {
@@ -164,7 +176,7 @@
   color: #444444;
   margin: 0;
   padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @include tablet() {
     font-size: 15px;
