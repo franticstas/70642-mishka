@@ -131,14 +131,14 @@
   @include tablet() {
     width: 21px;
     height: 21px;
-    top: 16px;
-    left: 15px;
-  }
-
-  @include desktop() {
     top: 14px;
     left: 14px;
   }
+
+  //@include desktop() {
+  //  top: 14px;
+  //  left: 14px;
+  //}
 }
 
 //-------------------------------Оформление CHECKBOX-------------------------------------
@@ -351,13 +351,14 @@
 }
 
 .text-placeholder--contacts {
-  padding-right: 20px;
+  padding-right: 40px;
   padding-top: 10px;
 
   @include tablet() {
     background-color: #f1f1f1;
     color: #444444;
     margin-bottom: 5px;
+    padding-right: 40px;
   }
 }
 
@@ -365,11 +366,11 @@
   fill: #cccccc;
 }
 
-.label__contacts:hover .icon-contacts,
-.label__contacts:focus .icon-contacts,
-.label__contacts:active .icon-contacts {
-  fill: #61d1b9;
-}
+//.label__contacts:hover .icon-contacts,
+//.label__contacts:focus .icon-contacts,
+//.label__contacts:active .icon-contacts {
+//  fill: #61d1b9;
+//}
 //-------------------------------Оформление ТЕЛЕФОН-------------------------------------
 .label__phone {
   position: relative;
@@ -381,6 +382,7 @@
   height: 24px;
   right: 8px;
   top: -1px;
+  fill: #cccccc;
 
   @include tablet() {
     right: 23px;
@@ -393,6 +395,11 @@
   }
 }
 
+.label__contacts:hover .icon-phone,
+.label__contacts:focus .icon-phone,
+.label__contacts:active .icon-phone {
+  fill: #61d1b9;
+}
 
 .form__group--phone {
   padding-bottom: 12px;
@@ -413,6 +420,7 @@
   height: 30px;
   right: 5px;
   top: -2px;
+  fill: #cccccc;
 
   @include tablet() {
     right: 21px;
@@ -423,6 +431,12 @@
     right: 7px;
     top: -3px;
   }
+}
+
+.label__contacts:hover .icon-email,
+.label__contacts:focus .icon-email,
+.label__contacts:active .icon-email {
+  fill: #61d1b9;
 }
 
 .form__group--email {

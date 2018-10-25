@@ -104,6 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   @include tablet() {
     width: 668px;
@@ -119,6 +120,40 @@
   }
 }
 
+.production__play {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/icon-play.svg");
+  //top: 27%;
+  //left: 33%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  //@include tablet() {
+  //  top: 43%;
+  //  left: 42%;
+  //}
+  //
+  //@include desktop() {
+  //  top: 42%;
+  //  left: 43%;
+  //}
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
 //---------------------------Второй блок производства-----------------------------------
 .production__block-second {
   padding-top: 25px;
