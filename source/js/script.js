@@ -48,4 +48,3 @@ if(overlay) {
     overlay.classList.remove('modal-show');
   });
 }
-
