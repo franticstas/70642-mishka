@@ -2,7 +2,7 @@
   margin: 0 auto;
   margin-top: 26px;
   margin-bottom: 58px;
-  overflow: hidden;
+  //overflow: hidden;
 
   @include tablet() {
     margin-bottom: 63px;
@@ -37,6 +37,7 @@
   @include tablet() {
     margin-left: 50px;
     margin-right: 50px;
+    min-width: 668px;
   }
 
   @include desktop() {
