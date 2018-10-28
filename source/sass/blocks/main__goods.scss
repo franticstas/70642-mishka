@@ -86,14 +86,21 @@
   //width: 50%;
   padding-right: 32px;
   width: 120px;
+  margin: 0;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-weight: bold;
 
   @include tablet() {
     //margin-left: 28px;
     //margin-right: 36px;
-    margin-right: 0;
+    padding-right: 57px;
     padding-left: 36px;
     //margin-left: 0;
     max-width: 115px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @include desktop() {

@@ -15,6 +15,7 @@
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
+    "gulp-util": "^3.0.8",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -22,8 +23,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp server"
+    "build": "gulp build  --type=prod",
+    "start": "npm run build && gulp server  --type=dev"
   },
   "browserslist": [
     "last 2 versions",

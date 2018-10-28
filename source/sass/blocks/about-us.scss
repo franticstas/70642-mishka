@@ -4,7 +4,7 @@
   //overflow: hidden; //TODO overflow
 
   @include tablet() {
-    padding-bottom: 80px;
+    padding-bottom: 85px;
   }
 
   @include desktop() {
@@ -88,7 +88,7 @@
   margin-bottom: 4px;
 
   @include tablet() {
-    padding-right: 35px;
+    padding-right: 93px;
     font-size: 20px;
     line-height: 22px;
   }

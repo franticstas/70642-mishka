@@ -37,6 +37,7 @@
     margin-left: 50px;
     margin-right: 50px;
     min-width: 668px;
+    margin-top: 51px;
   }
 
   @include desktop() {
@@ -126,6 +127,8 @@
   display: block;
   width: 101px;
   height: 77px;
+  background-color: transparent;
+  border: none;
   background-image: url("../img/icon-play.svg");
   //top: 27%;
   //left: 33%;

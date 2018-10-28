@@ -26,6 +26,9 @@
 
   @include tablet() {
     border-bottom: none;
+    margin-left: 39px;
+    margin-top: 5px;
+    width: 181px;
   }
 }
 
@@ -42,6 +45,10 @@
 
   @include tablet() {
     padding: 0;
+  }
+
+  @include desktop() {
+    padding-top: 9px;
   }
 }
 
@@ -75,7 +82,11 @@
   font-weight: bold;
 
   @include tablet() {
-    margin-right: 30px;
+    margin-right: 27px;
+  }
+
+  @include desktop() {
+    margin-right: 21px;
   }
 }
 
@@ -99,6 +110,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include desktop() {
+    padding-top: 9px;
+  }
 }
 
 .copy-right__link[href] {

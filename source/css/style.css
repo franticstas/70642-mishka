@@ -504,7 +504,7 @@ a {
   @media (min-width: 768px) {
     .main-nav {
       position: absolute;
-      top: 110px;
+      top: 106px;
       left: 0;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -687,6 +687,10 @@ a {
       padding-right: 3px;
       padding-top: 10px; } }
 
+@media (min-width: 768px) {
+  .user-list__item--cart {
+    padding-right: 4px; } }
+
 @media (min-width: 1150px) {
   .user-list__item--cart {
     margin-right: 0; } }
@@ -704,6 +708,9 @@ a {
       padding-left: 30px;
       padding-right: 32px;
       padding-top: 7px; } }
+  @media (min-width: 1150px) {
+    .user-list__cart-img {
+      padding-right: 28px; } }
 
 @media (min-width: 768px) {
   .hide-search {
@@ -715,7 +722,7 @@ a {
     .user-nav-second {
       display: block;
       position: absolute;
-      top: 110px;
+      top: 107px;
       left: 50px;
       z-index: 2; } }
 
@@ -757,7 +764,7 @@ a {
   @media (min-width: 1150px) {
     .header__delivery {
       position: absolute;
-      top: 110px;
+      top: 106px;
       display: block; } }
 
 .main__tagline {
@@ -904,12 +911,19 @@ a {
 
 .goods__text {
   padding-right: 32px;
-  width: 120px; }
+  width: 120px;
+  margin: 0;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-weight: bold; }
   @media (min-width: 768px) {
     .goods__text {
-      margin-right: 0;
+      padding-right: 57px;
       padding-left: 36px;
-      max-width: 115px; } }
+      max-width: 115px;
+      font-size: 20px;
+      line-height: 30px; } }
   @media (min-width: 1150px) {
     .goods__text {
       margin-left: 0;
@@ -1027,7 +1041,7 @@ a {
     .product-week__title {
       font-size: 43px;
       line-height: 50px;
-      padding-top: 45px;
+      padding-top: 41px;
       margin-right: 30px; } }
   @media (min-width: 1150px) {
     .product-week__title {
@@ -1180,7 +1194,7 @@ a {
   padding-bottom: 27px; }
   @media (min-width: 768px) {
     .about-us {
-      padding-bottom: 80px; } }
+      padding-bottom: 85px; } }
   @media (min-width: 1150px) {
     .about-us {
       padding-bottom: 90px;
@@ -1255,7 +1269,7 @@ a {
   margin-bottom: 4px; }
   @media (min-width: 768px) {
     .about-us__text {
-      padding-right: 35px;
+      padding-right: 93px;
       font-size: 20px;
       line-height: 22px; } }
   @media (min-width: 1150px) {
@@ -1424,7 +1438,7 @@ a {
   margin: 0; }
 
 .slider__description {
-  margin-top: 24px;
+  margin-top: 26px;
   font-size: 15px;
   line-height: 30px; }
   @media (min-width: 768px) {
@@ -1731,7 +1745,8 @@ a {
       padding-right: 38px; } }
   @media (min-width: 1150px) {
     .contacts__toggle {
-      margin-left: 168px;
+      margin-left: 172px;
+      padding-left: 43px;
       margin-right: 356px;
       margin-bottom: 0; } }
 
@@ -1764,7 +1779,10 @@ a {
   border-bottom: 1px solid #e5e5e5; }
   @media (min-width: 768px) {
     .footer__social {
-      border-bottom: none; } }
+      border-bottom: none;
+      margin-left: 39px;
+      margin-top: 5px;
+      width: 181px; } }
 
 .social__list {
   list-style: none;
@@ -1784,6 +1802,9 @@ a {
   @media (min-width: 768px) {
     .social__list {
       padding: 0; } }
+  @media (min-width: 1150px) {
+    .social__list {
+      padding-top: 9px; } }
 
 @media (min-width: 768px) {
   .social__item {
@@ -1808,7 +1829,10 @@ a {
   font-weight: bold; }
   @media (min-width: 768px) {
     .copyright__text {
-      margin-right: 30px; } }
+      margin-right: 27px; } }
+  @media (min-width: 1150px) {
+    .copyright__text {
+      margin-right: 21px; } }
 
 .footer__copyright {
   padding-top: 11px;
@@ -1831,6 +1855,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1150px) {
+    .copy-right__link {
+      padding-top: 9px; } }
 
 .copy-right__link[href] {
   color: #000000; }
@@ -2728,7 +2755,8 @@ a {
     .production__wrapper {
       margin-left: 50px;
       margin-right: 50px;
-      min-width: 668px; } }
+      min-width: 668px;
+      margin-top: 51px; } }
   @media (min-width: 1150px) {
     .production__wrapper {
       position: relative;
@@ -2818,6 +2846,8 @@ a {
   display: block;
   width: 101px;
   height: 77px;
+  background-color: transparent;
+  border: none;
   background-image: url("../img/icon-play.svg");
   top: 50%;
   left: 50%;
