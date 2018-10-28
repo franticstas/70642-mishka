@@ -1,4 +1,4 @@
-﻿.catalog-main__production {
+.catalog-main__production {
   margin: 0 auto;
   margin-top: 26px;
   margin-bottom: 58px;
@@ -16,7 +16,6 @@
   }
 }
 
-//---------------------------Обертка производства-----------------------------------
 .production__wrapper {
   margin-left: 30px;
   margin-right: 29px;
@@ -45,7 +44,7 @@
     min-height: 455px;
   }
 }
-//---------------------------Блок заголовка-----------------------------------
+
 .production__block {
   display: flex;
   align-items: center;
@@ -70,7 +69,6 @@
   }
 }
 
-//---------------------------Иконка заголовка-----------------------------------
 .production__icon {
   fill: #63d1bb;
   //padding-left: 34px;
@@ -83,7 +81,7 @@
   }
 }
 
-//---------------------------Заголовок производства-----------------------------------
+
 .production__title {
   font-size: 17px;
   line-height: 24px;
@@ -96,7 +94,6 @@
   }
 }
 
-//---------------------------Видео производства-----------------------------------
 .production__video {
   height: 150px;
   width: 260px;
@@ -157,7 +154,7 @@
     opacity: 0.3;
   }
 }
-//---------------------------Второй блок производства-----------------------------------
+
 .production__block-second {
   padding-top: 25px;
   padding-left: 34px;
@@ -178,7 +175,6 @@
   }
 }
 
-//---------------------------Описание производства-----------------------------------
 .production__description {
   font-size: 13px;
   line-height: 24px;
@@ -197,7 +193,6 @@
   }
 }
 
-//---------------------------Кнопка заказа-----------------------------------
 .production__order-toggle {
   text-transform: uppercase;
   text-decoration: none;
