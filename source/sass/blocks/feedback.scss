@@ -75,11 +75,12 @@
       display: block;
       width: 100%;
       background-image: url("../img/bg-zigzag-line.svg");
-      //background-size: contain;
+      background-size: contain;
       background-repeat: repeat-x;
-      bottom: 0;
+      bottom: 3px;
       left: 0;
       height: 23px;
+      transform: rotate(-180deg);
     }
   }
 }

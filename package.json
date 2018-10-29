@@ -16,6 +16,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
     "gulp-util": "^3.0.8",
+    "gulp-webp": "^3.0.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -24,7 +25,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build  --type=prod",
-    "start": "npm run build && gulp server  --type=dev"
+    "start": "gulp start && gulp server  --type=dev"
   },
   "browserslist": [
     "last 2 versions",

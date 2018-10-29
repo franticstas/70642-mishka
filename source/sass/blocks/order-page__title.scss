@@ -16,7 +16,14 @@
       background-size: contain;
       height: 24px;
       width: 100%;
-      bottom: -1px;
+      bottom: -2px;
+    }
+
+    @include desktop() {
+      &::after {
+        height: 34px;
+        bottom: -5px;
+      }
     }
   }
 

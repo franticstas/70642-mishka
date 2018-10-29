@@ -170,7 +170,7 @@
   }
 
   @include desktop() {
-    margin-right: 66px;
+    margin-right: 59px;
   }
 }
 
@@ -184,6 +184,10 @@
     min-height: auto;
     padding-top: 20px;
     padding-bottom: 4px;
+  }
+
+  @include desktop() {
+    justify-content: flex-start;
   }
 }
 
@@ -342,6 +346,7 @@
 .form__wrap--contacts {
   @include tablet() {
     margin-left: 166px;
+    position: relative;
   }
 
   @include desktop() {
@@ -352,7 +357,8 @@
 
 .text-placeholder--contacts {
   padding-right: 40px;
-  padding-top: 10px;
+  padding-top: 22px;
+  padding-bottom: 16px;
 
   @include tablet() {
     background-color: #f1f1f1;
@@ -366,13 +372,50 @@
   fill: #cccccc;
 }
 
+.label__contacts {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #63d1bb;
+    width: 76%;
+    top: 50%;
+    right: 0;
+  }
+
+  @include tablet() {
+    position: absolute;
+    left: -166px;
+    top: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include desktop() {
+    left: -113px;
+  }
+
+}
+
 //.label__contacts:hover .icon-contacts,
 //.label__contacts:focus .icon-contacts,
 //.label__contacts:active .icon-contacts {
 //  fill: #61d1b9;
 //}
 //-------------------------------Оформление ТЕЛЕФОН-------------------------------------
-.label__phone {
+.form__wrap--phone {
   position: relative;
 }
 
@@ -381,37 +424,52 @@
   width: 25px;
   height: 24px;
   right: 8px;
-  top: -1px;
+  top: 33px;
   fill: #cccccc;
 
   @include tablet() {
     right: 23px;
-    top: -4px;
+    top: 18px;
   }
 
   @include desktop() {
-    right: 9px;
-    top: -4px;
+    right: 120px;
+    top: 17px;
   }
 }
 
-.label__contacts:hover .icon-phone,
-.label__contacts:focus .icon-phone,
-.label__contacts:active .icon-phone {
+.text-placeholder--contacts:hover + .icon-phone,
+.text-placeholder--contacts:focus + .icon-phone,
+.text-placeholder--contacts:active + .icon-phone {
   fill: #61d1b9;
 }
 
 .form__group--phone {
+  border: none;
   padding-bottom: 12px;
 
   @include tablet() {
-    padding-top: 58px;
+    padding-top: 35px;
+    padding-bottom: 6px;
+    top: 9px;
   }
 }
 
 //-------------------------------Оформление EMAIL-------------------------------------
+.form__wrap--email {
+  position: relative;
+}
+
 .label__email {
   position: relative;
+
+  &::after {
+    width: 69%;
+  }
+
+  @include tablet() {
+    top: 40px;
+  }
 }
 
 .icon-email {
@@ -419,31 +477,32 @@
   width: 30px;
   height: 30px;
   right: 5px;
-  top: -2px;
+  top: 33px;
   fill: #cccccc;
 
   @include tablet() {
     right: 21px;
-    top: -3px;
+    top: 34px;
   }
 
   @include desktop() {
-    right: 7px;
-    top: -3px;
+    right: 116px;
+    top: 33px;
   }
 }
 
-.label__contacts:hover .icon-email,
-.label__contacts:focus .icon-email,
-.label__contacts:active .icon-email {
+.text-placeholder--contacts:hover + .icon-email,
+.text-placeholder--contacts:focus + .icon-email,
+.text-placeholder--contacts:active + .icon-email {
   fill: #61d1b9;
 }
 
 .form__group--email {
   padding-bottom: 12px;
+  border: none;
 
   @include tablet() {
-    padding-top: 15px;
+    padding-top: 0;
     padding-bottom: 45px;
   }
 }
@@ -456,6 +515,7 @@
 //----------------------------------Оформление пожеланий--------------------------------
 .form__group--wish {
   padding-bottom: 12px;
+  border: none;
 }
 
 .form__legend--wish {
@@ -475,10 +535,16 @@
   }
 }
 
+.label__wish {
+  @include tablet() {
+    top: 38px;
+  }
+}
+
 .form__wish-textarea {
   padding-top: 10px;
   padding-left: 12px;
-  margin-top: 15px;
+  margin-top: 24px;
   box-sizing: border-box;
   border: 2px solid #000000;
   height: 139px;

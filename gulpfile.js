@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var gutil = require('gulp-util');
+var webp = require('gulp-webp');
 console.log(gutil.env.type);
 gulp.task("css", function () {
     return gulp.src("source/sass/style.scss")
@@ -52,18 +53,24 @@ gulp.task("clean", function () {
     return del("build");
 });
 
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img/webp"))
+});
+
 gulp.task("server", function () {
     server.init({
-        server: gutil.env.type === "prod" ? "build/" : "source/",
+        server: "source/",
         notify: false,
         open: true,
         cors: true,
         ui: false
     });
 
-    gulp.watch("sass/**/*.{scss,sass}", gulp.series("css"));
-    gulp.watch("*.html").on("change", server.reload);
+    gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+    gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "images"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp"));
 gulp.task("start", gulp.series("css", "server"));

@@ -16,6 +16,7 @@
   @include desktop() {
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 39px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -49,6 +50,7 @@
 
   @include desktop() {
     padding-top: 9px;
+    padding-right: 8px;
   }
 }
 

@@ -8,7 +8,7 @@
   }
 
   @include desktop() {
-    padding-bottom: 90px;
+    padding-bottom: 83px;
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -75,7 +75,7 @@
   }
 
   @include desktop() {
-    padding-right: 17px;
+    padding-right: 26px;
   }
 }
 
@@ -109,15 +109,29 @@
   }
 }
 
+.about-us__eco-text {
+  @include desktop() {
+    margin-top: 15px;
+  }
+}
+
 .about-us__eco-img {
   fill: #63d1bb;
   width: 32px;
   height: 37px;
+
+  @include desktop() {
+    padding-left: 9px;
+  }
 }
 
 .about-us__rus-price {
   @include tablet() {
     order: 3;
+  }
+
+  @include desktop() {
+    padding-top: 53px;
   }
 }
 
@@ -127,9 +141,19 @@
   height: 27px;
 }
 
+.about-us__rus-price-text {
+  @include desktop() {
+    margin-top: 22px;
+  }
+}
+
 .about-us__likes {
   @include tablet() {
     order: 5;
+  }
+
+  @include desktop() {
+    padding-top: 58px;
   }
 }
 
@@ -137,6 +161,10 @@
   fill: #63d1bb;
   width: 34px;
   height: 27px;
+
+  @include desktop() {
+    padding-left: 9px;
+  }
 }
 
 .about-us__handmade {
@@ -155,6 +183,16 @@
   @include tablet() {
     order: 4;
   }
+
+  @include desktop() {
+    padding-top: 56px;
+  }
+}
+
+.about-us__handmade-text {
+  @include desktop() {
+    margin-top: 18px;
+  }
 }
 
 .about-us__production-img {
@@ -163,9 +201,19 @@
   height: 23px;
 }
 
+.about-us__production-text {
+  @include desktop() {
+    margin-top: 23px;
+  }
+}
+
 .about-us__pack {
   @include tablet() {
     order: 6;
+  }
+
+  @include desktop() {
+    padding-top: 55px;
   }
 }
 
