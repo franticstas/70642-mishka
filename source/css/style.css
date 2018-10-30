@@ -802,7 +802,8 @@ a {
   @media (min-width: 1150px) and (min-width: 1150px) {
     .main__tagline::after {
       height: 34px;
-      bottom: -16px; } }
+      bottom: -16px;
+      background-size: 111%; } }
   @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
     .main__tagline .page-header__logo {
       background-image: url("img/hero-desktop@2x.jpg");
